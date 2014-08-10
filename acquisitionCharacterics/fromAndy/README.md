@@ -11,10 +11,10 @@ Across sessions three variations of slice order were acquried. The summary sprea
 
 Also in that August 7 email, Andy describes the task timing and Bx recording. Pasted:
 
-   raw.log.COG.C.076-blah.log is the Presentation logfile for one subject’s COWAT
-   and MOTOR task.  I don’t know if you’re familiar with presentation. The
-   Response 99 indicates triggers from scanner, occurring every 2000ms (at start
-   of each acquisition).
+    raw.log.COG.C.076-blah.log is the Presentation logfile for one subject’s COWAT
+    and MOTOR task.  I don’t know if you’re familiar with presentation. The
+    Response 99 indicates triggers from scanner, occurring every 2000ms (at start
+    of each acquisition).
     
     COWAT:
     Letter task:  15 second block, starting at 15, 75, 135, 195, and 255 seconds
