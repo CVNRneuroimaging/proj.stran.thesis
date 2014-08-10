@@ -7,7 +7,7 @@ On 20140807 Andy emailed sequence characteristics for COWA, motor, and rest acqu
 
 This included a summary spreadsheet of non-sensitive session data. I'm working from [the version that Stella forwarded to me on August 8](https://docs.google.com/spreadsheets/d/1LhA_MiOxOChCteR2YYo-bs2JnFwGTKL9ovIQWsJ_mj4/edit?usp=sharing) (I'm not sure whether that includes any annotation from her or if its the original version Andy sent).
 
-Across sessions three variations of slice order were acquried. The summary spreadsheet above shows each session's slice order as "default", "ascending", or "interleaved". The slice timing files that correspond with each variation are included as text files in the directory with this README.
+Across sessions and sequences three variations of slice order were acquried. The summary spreadsheet above shows each sessionXsequence slice order as "default", "ascending", or "interleaved". The slice timing files that correspond with each variation are included as text files in the directory with this README.
 
 Also in that August 7 email, Andy describes the task timing and Bx recording. Pasted:
 
