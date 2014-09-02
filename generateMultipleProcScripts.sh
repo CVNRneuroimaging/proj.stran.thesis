@@ -26,7 +26,7 @@ projDir=${HOME}/gitrepos/proj.stran.thesis
 #
 apInputs="${projDir}/acquisitionCharacterics/varyingAfniprocInputs.csv"
 echo ""
-echo "\$apInputs=$apInputs"
+echo "\$apInputs==$apInputs"
 ls -al $apInputs
 echo ""
 
@@ -49,7 +49,7 @@ echo ""
 # The parent directory containing the acquired timeseries:
 acqParentDir="/data/birc/Atlanta/tranThesis/acqfiles/transfer"
 echo ""
-echo "\$acqParentDir=$acqParentDir"
+echo "\$acqParentDir==$acqParentDir"
 ls -ald $acqParentDir
 echo ""
 
@@ -60,9 +60,9 @@ disdacqs=0
 
 
 ################################################################################
-# We need afni_proc to create one ~300-line proc file for each sessionXtask
-# line of the $apInputs file.  This while-read loop below parses the lines of
-# the $apInputs file to read the appropriate afni_proc arguments for each
+# We need afni_proc to create ~300-line proc files for each sessionXtask line
+# of the $apInputs file.  This while-read loop below parses the lines of the
+# $apInputs file to read the appropriate afni_proc arguments for each
 # sessionXtask row.  (The "sed 1d" skips the first line of the file, which is
 # just a header line.
 ################################################################################
@@ -85,7 +85,7 @@ sed 1d $apInputs | while IFS="," read blind task sliceOrder; do
    ################################################################################
    anatWithSkull="${acqParentDir}/COG.C.${blind}.anat.nii"
    echo ""
-   echo "\$anatWithSkull=$anatWithSkull"
+   echo "\$anatWithSkull==$anatWithSkull"
    ls -al $anatWithSkull
    echo ""
 
