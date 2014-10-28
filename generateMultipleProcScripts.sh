@@ -173,26 +173,40 @@ sed 1d $apInputs | while IFS="," read blind task sliceOrder; do
          Block) # basis functions for fixed-shape (block) HRF analysis:
                case "$task" in
                   cowat)
-                     basisFxn="BLOCK(15,1)"
+                     basisFxn="BLOCK5(15,1)"
                      goforit3dD=""
                      goforitREML=""
                   ;;
                   motor)
-                     basisFxn="BLOCK(18,1)"
+                     basisFxn="BLOCK5(18,1)"
                      goforit3dD=""
                      goforitREML=""
                   ;;
                esac
          ;;
+         # Tent) # basis functions for variable-shape HRF analysis:
+         #       case "$task" in
+         #          cowat)
+         #             basisFxn="TENT(0,20,11)"
+         #             goforit3dD="-GOFORIT 3"
+         #             goforitREML="-GOFORIT"
+         #          ;;
+         #          motor)
+         #             basisFxn="TENT(0,22,12)"
+         #             goforit3dD=""
+         #             goforitREML=""
+         #          ;;
+         #       esac
+         # ;;
          Tent) # basis functions for variable-shape HRF analysis:
                case "$task" in
                   cowat)
-                     basisFxn="TENT(0,20,11)"
-                     goforit3dD="-GOFORIT 3"
-                     goforitREML="-GOFORIT"
+                     basisFxn="TENT(2,16,8)"
+                     goforit3dD=""
+                     goforitREML=""
                   ;;
                   motor)
-                     basisFxn="TENT(0,22,12)"
+                     basisFxn="TENT(2,16,8)"
                      goforit3dD=""
                      goforitREML=""
                   ;;
